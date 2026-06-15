@@ -52,6 +52,8 @@
 
 from __future__ import annotations
 
+import random
+
 # Importaciones base obligatorias para cualquier componente Python en Synapse.
 # - HiveComponentBase  : clase base de la que hereda todo componente
 # - HiveComponentInfo  : decorador que registra el componente en Synapse
@@ -263,7 +265,7 @@ class HiveComponent(HiveComponentBase):
             #
             # self.col_valor.insert(valor, ts)
 
-            valor_ejemplo = 42.0   # reemplaza con tu lectura real
+            valor_ejemplo = random.uniform(0.0, 100.0)  # número aleatorio entre 0 y 100
             self.col_valor.insert(valor_ejemplo, ts)
 
         # -----------------------------------------------------------------------
