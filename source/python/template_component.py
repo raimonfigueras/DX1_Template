@@ -257,8 +257,7 @@ class HiveComponent(HiveComponentBase):
             #     valor = self._conexion.leer_dato()
             # except TimeoutError as e:
             #     # Error grave → para el componente y muestra "TIMEOUT_ERROR" en la UI
-            #     return MI_ERROR_TIMEOUT(f'sin respuesta tras {p.timeout_s}s: {e}')
-            # except Exception as e:
+            #     return MI_ERROR_TIMEOUT(f'sin respuesta tras {p.timeout_s}s: {e}')            # except Exception as e:
             #     # Error transitorio → solo log, el bucle continúa en el siguiente tick
             #     self.log.warning(f'[{p.nombre}] error de lectura: {e}')
             #     continue
